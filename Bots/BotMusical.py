@@ -23,9 +23,9 @@ class BotZangado(Bot):
         if cmd == 1:
             self.boas_vindas()
         elif cmd ==2:
-            self.repetir_o_nome
+            self.repetir_o_nome()
         elif cmd == 3:
-            self.futuro
+            self.futuro()
         else:
             self.despedida()
 
