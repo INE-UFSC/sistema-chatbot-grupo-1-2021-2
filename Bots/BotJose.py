@@ -8,7 +8,7 @@ class BotJose(Bot):
     def nome(self):
         return self.__nome
 
-    @property
+    @nome.setter
     def nome(self, nome):
         self.__nome = nome
 
