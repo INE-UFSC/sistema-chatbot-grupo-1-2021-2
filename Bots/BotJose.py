@@ -36,7 +36,7 @@ class BotJose(Bot):
             print("José te entrega um guia de como se comportar numa entrevista")
             print("Regra 1: chame o empregador de 'meu parça', é contrato na certa")
         elif self.cmd == 4:
-            print("José diz: Meu amigo, espero que siga os meus conselhos. Adeus, até vista")
+            print("José diz: Vamos esquecer os erros do passado, meu amigo, e focar nos erros do futuro. Adeus, até vista")
         else:
             print("Comando inexistente")
 
