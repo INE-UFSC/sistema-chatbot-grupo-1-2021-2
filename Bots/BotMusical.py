@@ -3,8 +3,9 @@ from Bots.Bot import Bot
 class BotMusical(Bot):
     def __init__(self,nome):
         self.__nome = nome
-        self.__comandos = 4
-        
+        self.__comandos = {'1': 'Bom dia', '2': 'Quem é você?',
+                           '3': 'Como vai ser o futuro?', '4': 'Adeus'}
+
     @property
     def comandos(self):
         return self.__comandos
