@@ -3,6 +3,11 @@ from Bots.Bot import Bot
 class BotZangado(Bot):
     def __init__(self,nome):
         self.__nome = nome
+        self.__comandos = 4
+        
+    @property
+    def comandos(self):
+        return self.__comandos
 
     @property
     def nome(self):
