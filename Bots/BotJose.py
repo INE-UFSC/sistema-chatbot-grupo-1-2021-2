@@ -24,13 +24,13 @@ class BotJose(Bot):
         print("4 - adeus")
     def executa_comando(self,cmd):
         pass
-        if cmd == 1:
+        if self.cmd == 1:
             print("José analisa suas notas")
             print("José diz: Desistir é para os fracos, o ideal é nem tentar")
-        elif cmd == 2:
+        elif self.cmd == 2:
             print("José analisa seu Tinder")
             print("José diz: Nunca é tarde para um novo fracasso")
-        elif cmd == 3:
+        elif self.cmd == 3:
             print("José te entrega um guia de como se comportar numa entrevista")
             print("Regra 1: chame o empregador de 'meu parça', é contrato na certa")
             print("José diz: Vamos esquecer os erros do passado, meu amigo, e focar nos erros do futuro")
