@@ -13,17 +13,14 @@ class BotJose(Bot):
         pass
 
     def apresentacao(self):
-        pass
         print("Mensagem de apresentação: Olá, eu sou o José, seu bot conselheiro")
  
     def mostra_comandos(self):
-        pass
         print("1 - conselho para os estudos")
         print("2 - conselho amoroso")
         print("3 - conselho para a carreira")    
         print("4 - adeus")
     def executa_comando(self,cmd):
-        pass
         if self.cmd == 1:
             print("José analisa suas notas")
             print("José diz: Desistir é para os fracos, o ideal é nem tentar")
@@ -36,13 +33,11 @@ class BotJose(Bot):
             print("José diz: Vamos esquecer os erros do passado, meu amigo, e focar nos erros do futuro")
         elif self.cmd == 4:
             print("José diz: Meu amigo, espero que siga os meus conselhos. Adeus, até vista")
-        else
+        else:
             print("Comando inexistente")
 
     def boas_vindas(self):
-        pass
         print("José diz: Que bom que você me escolheu! Espero que eu possa te ajudar")
 
     def despedida(self):
-        pass
         print("José diz: Meu amigo, espero que siga os meus conselhos. Adeus, até vista")
