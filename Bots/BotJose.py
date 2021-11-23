@@ -3,6 +3,11 @@ from Bots.Bot import Bot
 class BotJose(Bot):
     def __init__(self,nome):
         self.__nome = nome
+        self.__comandos = {
+            "1": "conselho para os estudos",
+            "2": "conselho amoroso",
+            "3": "conselho para a carreira",
+            "4": "adeus"}
 
     @property
     def nome(self):
