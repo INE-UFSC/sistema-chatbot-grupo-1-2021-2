@@ -1,6 +1,6 @@
 from Bots.Bot import Bot
 
-class BotZangado(Bot):
+class BotMusical(Bot):
     def __init__(self,nome):
         self.__nome = nome
         self.__comandos = 4

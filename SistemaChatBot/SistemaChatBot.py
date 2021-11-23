@@ -13,7 +13,8 @@ class SistemaChatBot:
     def mostra_menu(self):
         print('Bots disponíveis:')
         for i,bot in enumerate(self.lista_bots):
-            print(f'{i} - Bot: {bot.nome} - Apresentação: {bot.apresentacao}')
+            print(f'{i} - Bot: {bot.nome} - Apresentação: ', end='')
+            bot.apresentacao()
         print()
 
     

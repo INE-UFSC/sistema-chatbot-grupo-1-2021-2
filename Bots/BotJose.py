@@ -8,9 +8,9 @@ class BotJose(Bot):
     def nome(self):
         return self.__nome
 
-    @property
-    def nome(nome):
-        return self.__nome
+    @nome.setter
+    def nome(self, nome):
+        self.__nome = nome
 
     def apresentacao(self):
         print("Mensagem de apresentação: Olá, eu sou o José, seu bot conselheiro")
