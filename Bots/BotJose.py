@@ -6,11 +6,11 @@ class BotJose(Bot):
 
     @property
     def nome(self):
-        pass
+        return self.__nome
 
     @property
     def nome(nome):
-        pass
+        return self.__nome
 
     def apresentacao(self):
         print("Mensagem de apresentação: Olá, eu sou o José, seu bot conselheiro")
