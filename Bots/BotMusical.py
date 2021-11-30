@@ -37,13 +37,13 @@ class BotMusical(Bot):
 
    
     def boas_vindas(self):
-        print('Alguma coisa acontece no meu coração... Ah, oi! Bom dia!')
+        return 'Alguma coisa acontece no meu coração... Ah, oi! Bom dia!'
 
     def quem_e(self):
-        print(f'EU SOU O SAMBAAA! Brincadeira, eu sou {self.__nome}!')
+        return f'EU SOU O SAMBAAA! Brincadeira, eu sou {self.__nome}!'
 
     def futuro(self):
-        print('Eu vejo a vida melhor no futuro, eu vejo isso por cima de um muro\nde hipocrisia que insiste em nos rodear...')
+        return 'Eu vejo a vida melhor no futuro, eu vejo isso por cima de um muro\nde hipocrisia que insiste em nos rodear...'
 
     def despedida(self):
-        print('Deixe-me ir, preciso andar, vou por aí a procurar... Rir pra não chorar! Tchaau!')
+        return 'Deixe-me ir, preciso andar, vou por aí a procurar... Rir pra não chorar! Tchaau!'
