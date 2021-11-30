@@ -1,0 +1,2 @@
+class Comando():
+    pass
