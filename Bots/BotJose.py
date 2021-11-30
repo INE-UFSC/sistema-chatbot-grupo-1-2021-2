@@ -8,6 +8,9 @@ class BotJose(Bot):
             "2": "conselho amoroso",
             "3": "conselho para a carreira",
             "4": "adeus"}
+    @property
+    def comandos(self):
+        return self.__comandos
 
     @property
     def nome(self):
@@ -30,21 +33,26 @@ class BotJose(Bot):
         print("3 - conselho para a carreira")
     def executa_comando(self,cmd):
         if cmd == 1:
-            print("José analisa suas notas")
-            print("José diz: Desistir é para os fracos, o ideal é nem tentar")
+            self.conselho_estudos()
         elif cmd == 2:
-            print("José analisa seu Tinder")
-            print("José diz: Nunca é tarde para um novo fracasso")
+           self.conselho_amoroso()
         elif cmd == 3:
-            print("José te entrega um guia de como se comportar numa entrevista")
-            print("Regra 1: chame o empregador de 'meu parça', é contrato na certa")
-        elif cmd == 4:
-            print("José diz: Vamos esquecer os erros do passado, meu amigo, e focar nos erros do futuro. Adeus, até vista")
+          self.conselho_carreira()
         else:
-            print("Comando inexistente")
+           self.despedida() 
+            
+    def conselho_estudos(self):
+        return "José analisa suas notas. José diz: Desistir é para os fracos, o ideal é nem tentar"
+    
+    def conselho_amoroso(self):
+        return "José analisa seu Tinder. José diz: Nunca é tarde para um novo fracasso"
+    
+    def conselho_carreira(self):
+        return "José te entrega um guia de como se comportar numa entrevista. Regra 1: chame o empregador de 'meu parça', é contrato na certa"
 
     def boas_vindas(self):
-        print("José diz: Que bom que você me escolheu! Espero que eu possa te ajudar")
+        return "José diz: Que bom que você me escolheu! Espero que eu possa te ajudar"
 
     def despedida(self):
-        print("José diz: Vamos esquecer os erros do passado, meu amigo, e focar nos erros do futuro. Adeus, até vista")
+        return "José diz: Vamos esquecer os erros do passado, meu amigo, e focar nos erros do futuro. Adeus, até vista"
+    
