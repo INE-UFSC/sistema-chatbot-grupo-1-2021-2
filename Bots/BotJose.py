@@ -17,25 +17,28 @@ class BotJose(Bot):
     def nome(self, nome):
         self.__nome = nome
 
+    @property
+    def comandos(self):
+        return self.__comandos
+
     def apresentacao(self):
         print("Mensagem de apresentação: Olá, eu sou o José, seu bot conselheiro")
  
     def mostra_comandos(self):
         print("1 - conselho para os estudos")
         print("2 - conselho amoroso")
-        print("3 - conselho para a carreira")    
-        print("4 - adeus")
+        print("3 - conselho para a carreira")
     def executa_comando(self,cmd):
-        if self.cmd == 1:
+        if cmd == 1:
             print("José analisa suas notas")
             print("José diz: Desistir é para os fracos, o ideal é nem tentar")
-        elif self.cmd == 2:
+        elif cmd == 2:
             print("José analisa seu Tinder")
             print("José diz: Nunca é tarde para um novo fracasso")
-        elif self.cmd == 3:
+        elif cmd == 3:
             print("José te entrega um guia de como se comportar numa entrevista")
             print("Regra 1: chame o empregador de 'meu parça', é contrato na certa")
-        elif self.cmd == 4:
+        elif cmd == 4:
             print("José diz: Vamos esquecer os erros do passado, meu amigo, e focar nos erros do futuro. Adeus, até vista")
         else:
             print("Comando inexistente")

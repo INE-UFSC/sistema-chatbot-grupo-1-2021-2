@@ -23,7 +23,7 @@ class BotMusical(Bot):
  
     def mostra_comandos(self):
         print('1 - Bom dia \n2 - Quem é você?')
-        print('3 - Como vai ser o futuro? \n4 - Adeus')
+        print('3 - Como vai ser o futuro?')
     
     def executa_comando(self,cmd):
         if cmd == 1:
