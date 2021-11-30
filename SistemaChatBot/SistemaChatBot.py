@@ -6,7 +6,7 @@ class SistemaChatBot:
         ##verificar se a lista de bots contém apenas bots
         self.__lista_bots = []
         for bot in lista_bots:
-            if type(bot) is Bot:
+            if isinstance(bot,Bot):
                 self.__lista_bots.append(bot)
             else:
                 raise ValueError('Um dos bots inseridos nao pertence a classe Bot')
